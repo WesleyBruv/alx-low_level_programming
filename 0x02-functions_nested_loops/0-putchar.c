@@ -3,9 +3,9 @@
 /**
  * main - prints _putchar
  *
- * Description: return _putchar
+ * Description: this returns _putchar
  *
- * Return sucessful
+ * Return: Sucessful
  */
 int main(void)
 {
@@ -18,6 +18,5 @@ int main(void)
 		x++;
 	}
 	_putchar('\n');
-	
 	return (0);
 }
