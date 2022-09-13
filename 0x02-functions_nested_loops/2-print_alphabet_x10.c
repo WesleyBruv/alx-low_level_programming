@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_alphabet_x10 - write code 10 times
+ *print_alphabet_x10 - write code 10 times
  *
  *Description: alphabet in 10 line
  *
@@ -11,18 +11,18 @@
 void print_alphabet_x10(void)
 {
 	int i = 0;
-	char x = 'a';
+	char a = 'a';
 
 	while (i <= 10)
 	{
-		while (x <= 'z')
+		while (a <= 'z')
 		{
-			_putchar(x);
-			x++;
+			_putchar(a);
+			a++;
 		}
 		i++;
 		_putchar('\n');
-		x = "a";
+		a = "a";
 	}
 }
 
