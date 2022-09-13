@@ -2,17 +2,15 @@
 #include "main.h"
 
 /**
- * main - lowercase alphabet
+ *main - lowercase alphabet
  *
- * Description: print (a-z) the lower case alphabet
+ *Description: print (a-z) the lower case alphabet
  *
- * Return: Sucessful
+ *Return: Sucessful
  */
-
 void print_alphabet(void)
 {
 	char i = 'a';
-	
 	while (i <= 'z')
 	{
 		_putchar(i);
