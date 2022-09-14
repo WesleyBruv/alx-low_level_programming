@@ -5,13 +5,13 @@
  *
  *Description: alphabet in 10 line
  *
- *Return: Sucessful
+ *Return: Sucessfull
  */
 
-void print_alphabet_x10(void)
+void print_alphabet_10(void)
 {
 	int i = 0;
-	char a = 'a';
+	char a = "a";
 
 	while (i <= 10)
 	{
