@@ -11,9 +11,9 @@ void print_most_numbers(void)
 {
 	int x;
 
-	for (x = 45; x < 55; x++)
+	for (x = '0'; x <= '9'; x++)
 	{
-		if ((x == 51) || (x == 53))
+		if ((x == '2') || (x == '4'))
 		{
 			continue;
 		}
