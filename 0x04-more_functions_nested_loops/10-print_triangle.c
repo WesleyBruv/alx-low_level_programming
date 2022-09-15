@@ -4,14 +4,14 @@
  * print_triangle - printing triangles
  * @size: Is the size of the triangles
  */
-void print_triangle(int size);
+void print_triangle(int size)
 {
 	int x, y, z;
 
 	for (z = 0; z < size; z++)
 	{
-		x = size - i - 1;
-		y = 1 + i;
+		x = size - z - 1;
+		y = 1 + z;
 		while (x > 0)
 		{
 			_putchar (' ');
@@ -19,7 +19,7 @@ void print_triangle(int size);
 		}
 		while (y > 0)
 		{
-			-putchar('#');
+			_putchar('#');
 			y--;
 		}
 		_putchar('\n');
