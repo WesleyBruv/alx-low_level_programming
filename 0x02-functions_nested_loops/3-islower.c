@@ -7,19 +7,17 @@
  *
  *Description: checks for lowercase c
  *
- *Return: Successful
+ *Return: 0
  */
 
 int _islower(int c)
-
 {
-	if (c < 'a' || c > 'z')
+	if (c >= 'a' && c <= 'z')
 	{
 		return 1;
 	}
 	else
-	{
+	
 		return 0;
-	}
 	
 }
