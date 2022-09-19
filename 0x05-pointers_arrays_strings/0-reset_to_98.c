@@ -1,9 +1,9 @@
 #include <stdio.h>
 
 /**
- * reset to 98 - will reset the pointer to 98
+ * reset_to_98 - will reset the pointer to 98
  *
- *Return: Always 0
+ * @n: Pointer
  */
 
 void reset_to_98(int *n)
