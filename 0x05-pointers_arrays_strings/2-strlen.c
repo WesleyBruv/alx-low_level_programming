@@ -6,7 +6,7 @@
  *
  * @s: input value
  *
- * Return: void 
+ * Return: void
  */
 
 int _strlen(char *s)
