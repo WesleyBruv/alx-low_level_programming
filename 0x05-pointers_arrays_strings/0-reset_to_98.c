@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * reset to 98 - will reset the pointer to 98 
+ * reset to 98 - will reset the pointer to 98
  *
  *Return: Always 0
  */
