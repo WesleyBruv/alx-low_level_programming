@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * _strelen - will be the length of a string
+ * _strlen - will be the length of a string
  *
  * @s: input value
  *
