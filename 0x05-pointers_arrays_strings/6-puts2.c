@@ -4,7 +4,7 @@
 /**
  * puts2 - prints every other character
  *
- * @s : This will be the input string
+ * @str : This will be the input string
  *
  * Return: void.
  */
@@ -12,7 +12,7 @@
 void puts2(char *str)
 {
 	int x;
-	
+
 	x = 0;
 	while (str[x] != '\0')
 	{
