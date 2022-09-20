@@ -5,27 +5,27 @@
  *
  * @s: pointer to the string
  *
- * Return: void
+ * Return: void.
  */
 
 void rev_string(char *s)
 {
-	int x, y, z, rev;
+	int x, y, z, temp;
 
 	x = 0;
 	while (s[x] != '\0')
 	{
 		x++;
 	}
-	y = x - 1;
 	z = 0;
+	y = x - 1;
 
 	while (z < y)
 	{
-		rev = s[z];
+		temp = s[z];
 		s[z] = s[y];
-		s[y] = s[rev];
+		s[y] = s[temp];
 		z++;
-		y++;
+		y--;
 	}
 }	       
