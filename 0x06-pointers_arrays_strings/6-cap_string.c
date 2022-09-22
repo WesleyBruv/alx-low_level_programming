@@ -6,30 +6,32 @@
  *
  *@d: string to caps
  *
- * Return: adress of s
+ * Return: adress of d
  */
 
 char *cap_string(char *d)
 {
-	int x = 0, y;
-	char a[] = " \t\n,;.!?\"(){}";
+	int x = 0;
 
-	while (*(d + 1))
+	while (d[++x])
 	{
-		if (*(d + 1) >= 'a' && *(d + x) <= 'z')
-		{
-			if (x == 0)
-				*(d + x) -= 'a' - 'A';
-			else
-			{
-				for (y = 0; y <= 12; y++)
-				{
-					if (a[y] == *(d + x - 1))
-						*(d + x) -= 'a' - 'A';
-				}
-			}
-		}
-		x++;
+		while (!(d[x] >= 'a' && d[x] <= 'z'))
+			x++;
+
+		if (d[x - 1] == ' ' ||
+				d[x - 1] == '\t' ||
+				d[x - 1] == '\n' ||
+				d[x - 1] == ',' ||
+				d[x - 1] == ':' ||
+				d[x - 1] == '.' ||
+				d[x - 1] == '!' ||
+				d[x - 1] == '?' ||
+				d[x - 1] == '"' ||
+				d[x - 1] == '(' ||
+				d[x - 1] == ')' ||
+				d[x - 1] == '{' ||
+				d[x - 1] == '}')
+			d[x] -= 32;
 	}
 	return (d);
 }
