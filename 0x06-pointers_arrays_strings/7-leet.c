@@ -4,7 +4,7 @@
  * leet - will encode the string into the
  * following code 1337
  *
- * @d; string that will be encoded  
+ * @d: string that will be encoded
  *
  * Return: address of s
  */
