@@ -13,7 +13,7 @@ char *cap_string(char *d)
 {
 	int x = 0;
 
-	while (d[++x])
+	while (d[x])
 	{
 		while (!(d[x] >= 'a' && d[x] <= 'z'))
 			x++;
@@ -32,6 +32,7 @@ char *cap_string(char *d)
 				d[x - 1] == '{' ||
 				d[x - 1] == '}')
 			d[x] -= 32;
+		x++;
 	}
 	return (d);
 }
